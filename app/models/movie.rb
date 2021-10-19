@@ -1,11 +1,11 @@
 class Movie < ApplicationRecord
-  def all_movies
+  def index
     movies = Movie.all
-    return movies
+    render json: movies.as_json
   end
 
-  def one_movie
-    movie_id = params[:id]
+  def show
+    movie_id = params[:id].to_i
     movie = Movie.find_by(id: movie_id)
     render json: movie.as_json
   end

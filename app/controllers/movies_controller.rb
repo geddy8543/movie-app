@@ -1,4 +1,4 @@
 class MoviesController < ApplicationController
-  get "/all_movies" => "movies#all_movies"
-  get "/one_movie" => "movies#one_movie"
+  get "/movies" => "movies#index"
+  get "/movies/:id" => "movies#show"
 end
