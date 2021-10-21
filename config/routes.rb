@@ -9,3 +9,5 @@ end
 
 ###Params examples
 get "/query_params" => "actors#query_params"
+get "/segment_params/:single_actor" => "actors#segment_params"
+post "body_params" => "actors#body_params"

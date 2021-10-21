@@ -14,4 +14,14 @@ class ActorsController < ApplicationController
     input_value = params["actor"]
     render json: { message: "My favorite actor is #{input_value}" }
   end
+
+  def segment_params
+    input_value = params["single_actor"]
+    render json: { message: "The url segment is actor #{input_value}" }
+  end
+
+  def body_params
+    input_value = params["single_actor"]
+    render json: { message: "The actor is #{input_value}" }
+  end
 end
