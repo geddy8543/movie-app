@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   get "/actor_path", controller: "actors", action: "all_actors"
   get "/single_actor/:id", controller: "actors", action: "single_actor"
   get "/movie_path", controller: "movies", action: "all_movies"
+  get "/movies" => "movies#index"
+  get "/movies/:id" => "movies#show"
 end
+
+###Params examples
+get "/query_params" => "actors#query_params"
