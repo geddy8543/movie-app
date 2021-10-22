@@ -4,9 +4,12 @@ Rails.application.routes.draw do
   get "/movies" => "movies#index"
   get "/movies/:id" => "movies#show"
   post "/actors" => "actors#create"
-end
+  get "/actors/:id" => "actors#show"
+  patch "/actors/:id" => "actors#update"
+  delete "/actors/:id" => "actors#destroy"
 
-###Params examples
-get "/query_params" => "actors#query_params"
-get "/segment_params/:single_actor" => "actors#segment_params"
-post "body_params" => "actors#body_params"
+  ###Params examples
+  get "/query_params" => "actors#query_params"
+  get "/segment_params/:single_actor" => "actors#segment_params"
+  post "body_params" => "actors#body_params"
+end
