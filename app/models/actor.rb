@@ -4,4 +4,6 @@ class Actor < ApplicationRecord
   validates :known_for, presence: true
   validates :age, presence: true
   validates :gender, presence: true
+
+  belongs_to :movie  #returns hash of a single movie
 end
