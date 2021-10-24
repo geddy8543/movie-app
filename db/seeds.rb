@@ -13,6 +13,10 @@ actor.save
 
 Actor.create(first_name: "Keira", last_name: "Knightley", known_for: "Atonement", age: 36, gender: "female")
 
+Actor.create(first_name: "Cary", last_name: "Grant", known_for: "To Catch a Thief", age: 85, gender: "male")
+
+Actor.create(first_name: "Hugh", last_name: "Grant", known_for: "Love Actually", age: 61, gender: "male")
+
 movie = Movie.new({ title: "To Catch a Thief", year: 1955, plot: "Cary Grant plays a former catburgler accused of a string of jewelry thefts along the French Riviera", director: "Alfred Hitchcock", english: "yes" })
 movie.save
 
@@ -25,3 +29,7 @@ movie.save
 Movie.create(title: "The Devil Wears Prada", year: 2006, plot: "A recent college grad takes a job as an assistant to the editor of Vogue magazine", director: "David Frankel", english: "yes")
 
 Movie.create(title: "Good Will Hunting", year: 1997, plot: "A young janitor at MIT has a genius IQ and is discovered by a professor", director: "Gus Van Sant", english: "yes")
+
+Movie.create(title: "Love Actually", year: 2003, plot: "The love stories of several Brits as told over Christmastime", director: "Richard Curtis", english: "yes")
+
+Movie.create(title: "Four Weddings and a Funeral", year: 1994, plot: "Several friends meet for weddings and a funeral over a year in England", director: "Mike Newell", english: "yes")
