@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get "/query_params" => "actors#query_params"
   get "/segment_params/:single_actor" => "actors#segment_params"
   post "body_params" => "actors#body_params"
-end
 
-### user routes
-post "/users" => "users#create"
+  ### user routes
+  post "/users" => "users#create"
+end

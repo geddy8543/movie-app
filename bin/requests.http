@@ -19,4 +19,15 @@ Content-Type: application/json
     "password": "vwbug",
     "password_confirmation": "vwbug"
 }
+ 
+ ### user create
+ POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+    "name": "Fred",
+    "email": "fred@test.com",
+    "password": "woof",
+    "password_confirmation": "woof"
+}
 
