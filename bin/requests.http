@@ -8,3 +8,5 @@ DELETE http://localhost:3000/movies/2.json
 
 ### delete more duplicates
 DELETE http:/localhost:3000/movies/3.json
+
+### add users 

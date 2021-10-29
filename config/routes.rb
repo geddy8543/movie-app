@@ -18,3 +18,6 @@ Rails.application.routes.draw do
   get "/segment_params/:single_actor" => "actors#segment_params"
   post "body_params" => "actors#body_params"
 end
+
+### user routes
+post "/users" => "users#create"
