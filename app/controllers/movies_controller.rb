@@ -31,7 +31,7 @@ class MoviesController < ApplicationController
     movie.year = params[year] || movie.year
     movie.plot = params["plot"] || movie.plot
     movie.director = params["director"] || movie.director
-    render json: movie.as_json
+    render json: movie
   end
 
   def destroy

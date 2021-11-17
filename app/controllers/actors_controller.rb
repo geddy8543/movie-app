@@ -11,8 +11,8 @@ class ActorsController < ApplicationController
       first_name: params["first_name"],
       last_name: params["last_name"],
       known_for: params["known_for"],
-      gender: params["gender"],
       age: params["age"],
+      gender: params["gender"],
       movie_id: params[:movie_id],
     )
     actor.save
